@@ -26,7 +26,7 @@ function adicionaEvento(elemento, opcao) {
     })
 }
 
-if(localStorage.getItem('inicio') == undefined) {
+if (localStorage.getItem('inicio') == undefined) {
     localStorage.setItem('inicio', window.location.pathname)
     caminhoPai = localStorage.getItem('inicio')
 } else {
@@ -55,10 +55,10 @@ adicionaEvento(eletronica, 4)
 adicionaEvento(inicio, -1)
 
 
-if(window.location.pathname == caminhoPai + 'paginas/cursos.html') 
+if (window.location.pathname == caminhoPai + 'paginas/cursos.html') {
     titulo = document.getElementById('titulo')
     opcao = localStorage.getItem('categoria')
-    switch(opcao) {
+    switch (opcao) {
         case '0':
             titulo.innerText = 'Tecnologia'
             break
@@ -79,3 +79,4 @@ if(window.location.pathname == caminhoPai + 'paginas/cursos.html')
         cursosDiv.innerHTML = cursosDiv.innerHTML + `<div class="curso"><a>${curso}</a></div>`
         cursos[index].href = './curso.html'
     })
+}

@@ -75,6 +75,7 @@ body {
 
 #empresa {
     font-size: 1.3em;
+    color: white
 }
 
 #subBar {
@@ -85,7 +86,7 @@ body {
 #conteiner1 {
     display:flex;
     justify-content:space-around;
-    height: calc-size(min-content, size + 2em);
+    height: calc-size(min-content, size + 6em);
     background-color: rgb(238, 238, 238);
 }
 
@@ -233,9 +234,16 @@ p {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    height: calc-size(min-content, size + 5em);
+    display:flex;
+    justify-content: center;
+    gap: 2em
 }
 
 @media screen and (min-height: 1024px) and (min-width: 768px) {
+    #titulo {
+        font-size: 2.3em
+    }
     .botaoBar {
         gap: 1em;
     }
@@ -253,8 +261,7 @@ p {
         padding: 1em
     }
 
-    .botaoBar:hover, .botaoLogin:hover {
-    }
+
     .botaoBar:active, .botaoLogin:active {
         background-color: rgb(255, 255, 255, 0.15)
     }
@@ -414,6 +421,11 @@ p {
     #containerPainel {
         height: calc-size(min-content, size + 4em);
 
+    }
+
+    #container1 {
+        height: calc-size(min-content, size + 2em);
+        gap: 0;
     }
 }
 
