@@ -19,7 +19,7 @@ function adicionaEvento(elemento, opcao) {
 
         } else {
             localStorage.setItem('categoria', opcao)
-            window.location.replace('/paginas/cursos.html')
+            window.location.replace('./paginas/cursos.html')
         }
 
     })
