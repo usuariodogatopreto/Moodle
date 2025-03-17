@@ -1,0 +1,418 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+#navBar {
+    height: min-content;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    z-index: 1;
+}
+
+.cabecaBar {
+    background-color:#0a525b;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.botaoBar {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 0.6em;
+    padding: 5px;
+}
+
+.botaoBar:hover {
+    background-color: rgb(255, 255, 255, 0.15);
+    cursor:pointer;
+}
+
+.linha {
+    background-color: white;
+    width: 2em;
+    height: 0.2em;
+}
+
+
+.botaoLogin {
+    background-color:#14727b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 10px;
+    margin-right: 1em;
+}
+
+.botaoLogin:hover{
+    background-color: rgb(255, 255, 255, 0.15);
+    cursor:pointer  
+}
+
+.botaoCorpo {
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+    background-color: white;
+}
+
+.botaoCorpo:hover {
+    background-color: rgba(240, 240, 240);
+}
+
+#empresa {
+    font-size: 1.3em;
+}
+
+#subBar {
+    padding: 1.6em;
+
+}
+
+#conteiner1 {
+    display:flex;
+    justify-content:space-around;
+    height: calc-size(min-content, size + 2em);
+    background-color: rgb(238, 238, 238);
+}
+
+#paragrafo {
+    width: 40vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em
+}
+
+img {
+    width: 28vw
+}
+
+p {
+    text-align:justify
+}
+
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+} 
+
+.informacoesTexto {
+    color: rgba(255, 255, 255, 0.775);
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#container2 {
+    background-color: #00323a;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+}
+.curso { 
+    border: 1px solid black;
+    height: 8vh;
+    margin: 0px 2em 0px 2em;
+    display:flex;
+    align-items: center;
+    padding-left: 2em
+}
+
+#empresa {
+    cursor: pointer;
+}
+.cursos {
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+
+
+#video {
+    background-color: lightgray;
+    width: 40vw;
+    height: 50vh;
+}
+#botaoCentro {
+    height: 40vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#botaoPlay {
+    border-left: 25px solid gray;
+    border-bottom: 25px solid transparent;
+    border-top:25px solid transparent;
+}
+
+#barra {
+    height: min-content;
+    width: 70%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#barraVideo {
+    height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#botaoPlayMini {
+    width: 0;
+    height: 0;
+    border-left: 10px solid gray;
+    border-bottom: 10px solid transparent;
+    border-top:10px solid transparent;
+}
+
+#barraCarregamento {
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+}
+
+#bolaCarregamento {
+    background-color: gray;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+}
+
+#conteudo {
+    width: 40vw;
+}
+#painel {
+    display:flex;
+    
+}
+#containerPainel {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: calc-size(min-content, size + 10em);
+}
+
+.video {
+    border: 1px solid black;
+    padding: 1.3em;
+}   
+
+#video {
+    border: 1px solid black;
+}
+
+.nomeConteudo {
+    cursor: pointer
+}
+
+#container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (min-height: 1024px) and (min-width: 768px) {
+    .botaoBar {
+        gap: 1em;
+    }
+    .linha {
+        width: 3.5em;
+        height: 0.34em;
+    }
+
+    .botaoLogin {
+        font-size: 1.8em;
+        padding: 0.7em;
+    }
+
+    .botaoBar {
+        padding: 1em
+    }
+
+    .botaoBar:hover, .botaoLogin:hover {
+    }
+    .botaoBar:active, .botaoLogin:active {
+        background-color: rgb(255, 255, 255, 0.15)
+    }
+
+    .botaoCorpo {
+        font-size: 2em
+    }
+
+    #empresa {
+        font-size: 2em;
+    }
+
+    #subBar {
+        padding: 2.5em
+    }
+
+    #conteiner1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        width: 80vw
+    }
+    h3 {
+        font-size: 2em;
+        width: max-content
+    }
+    p {
+        font-size: 1.8em
+    }
+
+    img {
+        height: 40vh;
+        width: auto;
+    }
+    .informacoesTexto {
+        font-size: 2.7vw
+    }
+
+    a {
+        font-size: 3vw;
+    }
+
+    .curso {
+        padding: 1.3vh 0px 1.3vh 6vw
+    }
+    .botaoLogin {
+        margin-right: 1em;
+    }
+
+    #painel {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #video {
+        width:  80vw
+    }
+    #conteudo {
+        width: 80vw
+    }
+
+    .nomeConteudo {
+        font-size: 1.3em;
+    }
+    .video {
+        padding: 30px;
+    }
+
+    #botaoPlay {
+        border-left: 40px solid gray;
+        border-bottom: 40px solid transparent;
+        border-top: 40px solid transparent
+    }
+
+    #botaoPlayMini {
+        border-left: 18px solid gray;
+        border-bottom: 18px solid transparent;
+        border-top: 18px solid transparent
+    }
+
+    #bolaCarregamento {
+        width: 25px;
+        height: 25px;
+    }
+
+    #barraCarregamento {
+        height: 10px;
+    }
+
+    #containerPainel {
+        height: calc-size(min-content, size + 2em);
+        margin-bottom: 3em
+    }
+}
+
+@media screen and (min-width: 0px) and (min-height: 0px)  and ((max-height:1023px) and (max-width: 767px)){
+    #conteiner1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3 {
+        width: max-content;
+    }
+
+    p {
+        width: 80vw
+    }
+
+    img {
+        width: auto;
+        height: 30vh;
+        margin-top: 2em;
+    }
+
+    #container2 {
+        flex-direction: column;
+        align-items:stretch;
+        padding-left: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .informacoesTexto {
+        font-size: 1em;
+    }
+    .cursos{
+        padding-top: 1.55em;
+
+    }
+    .botaoLogin {
+        margin-right: 0;
+    }
+    #painel {
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    #video {
+        width: 80vw;
+        height: 18em;
+    }
+
+    #conteudo {
+        width: 80vw;
+    }
+
+    #botaoCentro {
+        height: 13em;
+    }
+
+    #barraVideo {
+        height: 5em;
+    }
+
+    #containerPainel {
+        height: calc-size(min-content, size + 4em);
+
+    }
+}
+
