@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=devise-width, initial-scale=1.0">
         <title>Cursos</title>
-        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" id=style>
     </head>
     <body>
         <div class="cabecaBar">
@@ -82,5 +82,12 @@
         
 
     </script>
-    <script src="src/script.js" type="text/javascript"></script>
+    <script id=script type="text/javascript"></script>
+        <script>
+        const script = document.getElementById('script')
+        const style = document.getElementById('style')
+        let caminho = localStorage.getItem('inicio')
+        style.href = caminho + 'src/style.css'
+        script.src = caminho + 'src/script.js'
+    </script>
 </html>
