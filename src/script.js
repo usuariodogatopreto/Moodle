@@ -10,17 +10,17 @@ const cursosValores = ['Curso1', 'Curso2', 'Curso3', 'Curso4']
 const cursosDiv = document.getElementsByClassName('cursos')[0]
 const cursos = document.getElementsByTagName('a')
 const empresa = document.getElementById('empresa')
-let caminho 
+let caminhoPai
 let opcao
 let titulo
 function adicionaEvento(elemento, opcao) {
     elemento.addEventListener('click', () => {
         if (opcao == -1) {
-            window.location.replace(caminho)
+            window.location.replace(caminhoPai)
 
         } else {
             localStorage.setItem('categoria', opcao)
-            window.location.replace(caminho + '/paginas/cursos.html')
+            window.location.replace(caminhoPai + 'paginas/cursos.html')
         }
 
     })
@@ -28,13 +28,13 @@ function adicionaEvento(elemento, opcao) {
 
 if(localStorage.getItem('inicio') == undefined) {
     localStorage.setItem('inicio', window.location.pathname)
-    caminho = localStorage.getItem('inicio')
+    caminhoPai = localStorage.getItem('inicio')
 } else {
-    caminho = localStorage.getItem('inicio')
+    caminhoPai = localStorage.getItem('inicio')
 }
 
 empresa.addEventListener('click', () => {
-    window.location.replace(caminho)
+    window.location.replace(caminhoPai)
 })
 
 corpoBar.style.display = 'none'
@@ -55,7 +55,7 @@ adicionaEvento(eletronica, 4)
 adicionaEvento(inicio, -1)
 
 
-if(window.location.pathname == caminho + '/paginas/cursos.html') 
+if(window.location.pathname == caminhoPai + 'paginas/cursos.html') 
     titulo = document.getElementById('titulo')
     opcao = localStorage.getItem('categoria')
     switch(opcao) {
