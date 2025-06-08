@@ -26,7 +26,7 @@ function adicionaEvento(elemento, opcao) {
     })
 }
 
-if(!location.origin.includes('paginas')) localStorage.setItem('inicio', location.origin))
+if(!location.origin.includes('paginas')) localStorage.setItem('inicio', location.origin)
 
 
 if (localStorage.getItem('inicio') == undefined) {
