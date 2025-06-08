@@ -26,6 +26,9 @@ function adicionaEvento(elemento, opcao) {
     })
 }
 
+if(!location.origin.includes('paginas')) localStorage.setItem('inicio', location.origin))
+
+
 if (localStorage.getItem('inicio') == undefined) {
     localStorage.setItem('inicio', window.location.pathname)
     caminhoPai = localStorage.getItem('inicio')
